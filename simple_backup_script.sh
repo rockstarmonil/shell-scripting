@@ -2,7 +2,11 @@
 
 SOURCE_DIR="$HOME/Desktop/shell-scripting"
 BACKUP_DIR="$HOME/Desktop/Backup"
+
 DATE=$(date +%F)  # Corrected the date command syntax
+
+DATE=$(date+%F)
+
 FILENAME="script-backup-$DATE.tar.gz"
 
 #-----Creating Backup Directory If Not Exists ------
@@ -17,3 +21,4 @@ tar -czvf "$BACKUP_DIR/$FILENAME" "$SOURCE_DIR"
 
 echo "Backup Created: $BACKUP_DIR/$FILENAME"
 
+echo "Backup Created : $BACKUP_DIR/$FILENAME"
